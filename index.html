@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+
+        <title>Survey of the village cinema</title>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+   
+        <style>
+            body {
+                background: linear-gradient(45deg, darkorange, yellow, rgb(204, 204, 255));
+                font-family: 'Poppins', sans-serif;
+                text-align: center;
+                font-size: 1.5rem;
+            }
+            #main {
+                background: rgba(255, 255, 255, 0.5);
+                margin-left: auto;
+                margin-right: auto;
+                width: 80vw;
+                max-width: 700px;
+                padding: 20px;
+            }
+            #title {
+                font-weight: bolder;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50vw;
+                max-width: 700px;
+                font-size: 4rem;
+            }
+            #description {
+                font-weight: bolder;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50vw;
+                max-width: 700px;
+                font-size: 2rem;
+                padding-bottom: 20px;
+            }
+            p {
+                text-align: left;
+                font-size: 2rem;
+            }
+            #survey-form {
+                text-align: left;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50vw;
+                max-width: 700px;
+            }
+            #name, #email, #number {
+                width: 100%;
+                height: 20px;
+            }
+            #dropdown {
+                width: 100%;
+                height: 25px;
+            }
+            #comments {
+                width: 100%;
+                height: 100px;
+            }
+            #submit {
+                display: block;
+                width: 100%;
+                padding: 0.75rem;
+                background: green;
+                color: white;
+                border-radius: 2px;
+            }
+        </style>
+
+    </head>
+    
+
+    <body>
+
+        <main id="main">
+            <h1 id="title">Survey of the<br>village cinema</h1>
+            <p id="description">We want to know what movies the neighborhood would like to see.</p>
+
+            <p>Please complete below:</p>
+            
+            <form id="survey-form">
+                <label id="name-label" for="name"><b>Name</b></label><br>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+                <br>
+                <label id="email-label" for="email"><b>Email</b></label><br>
+                <input type="email" name="name" id="email" placeholder="Enter your Email" required><br>
+                <br>
+                <label id="number-label" for="number"><b>Age (optional)</b></label><br>
+                <input type="number" name="number" id="number" min="10" max="99" placeholder="Age"><br>
+                <br>
+                <b>What movie would you like to see next weekend?</b><br>
+                <select id="dropdown" name="option" required>
+                    <option disabled selected value>Select a movie</option>
+                    <option value="option-1">Spider-Man 3 (2007)</option>
+                    <option value="option-2">Cars (2006)</option>
+                    <option value="option-3">Gladiator (2000)</option>
+                </select>
+                <br><br>
+                <b>What do you think of last weekend's movie?</b><br>
+                <label>
+                    <input name="radio-button" value="good" type="radio">Good movie
+                </label>
+                <br>
+                <label>
+                    <input name="radio-button" value="acceptable" type="radio">Acceptable
+                </label>
+                <br>
+                <label>
+                    <input name="radio-button" value="bad" type="radio">Bad movie
+                </label>
+                <br><br>
+                <b>What genres of movies do you like the most?</b>
+                <br>
+                <label>
+                    <input name="checkbox" value="action" type="checkbox">Action
+                </label>
+                <br>
+                <label>
+                    <input name="checkbox" value="comedy" type="checkbox">Comedy
+                </label>
+                <br>
+                <label>
+                    <input name="checkbox" value="drama" type="checkbox">Drama
+                </label>
+                <br>
+                <label>
+                    <input name="checkbox" value="fantasy" type="checkbox">Fantasy
+                </label>
+                <br>
+                <label>
+                    <input name="checkbox" value="horror" type="checkbox">Horror
+                </label>
+                <br>
+                <label>
+                    <input name="checkbox" value="mystery" type="checkbox">Mystery
+                </label>
+                <br>
+                <label>
+                    <input name="checkbox" value="romance" type="checkbox">Romance
+                </label>
+                <br>
+                <label>
+                    <input name="checkbox" value="thriller" type="checkbox">Thriller
+                </label>
+                <br>
+                <label>
+                    <input name="checkbox" value="western" type="checkbox">Western
+                </label>
+                <br><br>
+                <b>Additional comments:</b>
+                <br>
+                <textarea id="comments" name="comment" placeholder="Enter your comments here..."></textarea>
+                <br><br>
+                <button type="submit" id="submit"><b>Submit</b></button>
+            </form>
+        </main>
+    </body>
+</html>
